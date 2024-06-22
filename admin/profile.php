@@ -1,3 +1,13 @@
+<?php
+session_start();
+require("config.php");
+////code
+ 
+if(!isset($_SESSION['auser']))
+{
+	header("location:index.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 

@@ -63,24 +63,30 @@ if (!isset($_SESSION['auser'])) {
                 $cnt = 1;
                 while ($row = mysqli_fetch_row($query)) {
                     ?>
-                    <div class="col-xl-3 col-sm-6 ">
-                        <div class="card " style="width: 20rem; padding:9px ">
+                    <div class="col-xl-3 col-sm-6 " style="margin: 10px;">
+                        <div class="card " style="width: 20rem; padding:9px ; ">
                             <img style="border-radius: 20rem;     box-shadow: 2px 5px 10px black ;"
                                 src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $row['1']; ?></h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                    of the
-                                    card's content.</p>
-                                <a href="#" class="btn btn-primary">Know More</a>
+                                <h5 class="card-title"> <strong>Name:</strong><?php echo $row['1']; ?></h5>
+                                <p class="card-text"> <Strong> Email:</Strong> <?php echo $row['7']; ?></p>
+                                <p class="card-text"> <Strong> Phone:</Strong> <?php echo $row['2']; ?></p>
+                                <p class="card-text"> <Strong> branch:</Strong> <?php echo $row['6']; ?></p>
+
+                                <p class="card-text"> <Strong> Exprience: </Strong> <?php echo $row['4']; ?></p>
+                                    <p class="card-text"></p>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-primary"><?php echo $row['9']; ?></a>
+
+                                
                             </div>
                         </div>
                     </div>
 
 
                     <?php
-                    $cnt = $cnt + 1;
+                    
                 }
                 ?>
 
