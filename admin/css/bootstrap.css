@@ -4176,8 +4176,9 @@ textarea.form-control-lg {
   background-clip: border-box;
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
   border-radius: var(--bs-card-border-radius);
-  margin: 50px;
+  /* margin: 0px; */
 }
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;

@@ -28,6 +28,28 @@ if (!isset($_SESSION['auser'])) {
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <style>
+        .card2 {
+            width: 20rem;
+            padding: 7px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 10px;
+            transition: all 0.8s;
+        }
+
+        .card2:hover {
+
+            box-shadow: 2px 2px 5px 5px;
+            background-color: lightcyan
+            ;
+            
+
+
+            padding: 12px;
+
+        }
+    </style>
 
 
 </head>
@@ -63,8 +85,8 @@ if (!isset($_SESSION['auser'])) {
                 $cnt = 1;
                 while ($row = mysqli_fetch_row($query)) {
                     ?>
-                    <div class="col-xl-3 col-sm-6 " style="margin: 10px;">
-                        <div class="card " style="width: 20rem; padding:9px ; ">
+                    <div class="col-xl-3 col-sm-6 " style="margin-left: 10px;">
+                        <div class="card card2 " style=" ">
                             <img style="border-radius: 20rem;     box-shadow: 2px 5px 10px black ;"
                                 src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
                                 class="card-img-top" alt="...">
@@ -75,18 +97,24 @@ if (!isset($_SESSION['auser'])) {
                                 <p class="card-text"> <Strong> branch:</Strong> <?php echo $row['6']; ?></p>
 
                                 <p class="card-text"> <Strong> Exprience: </Strong> <?php echo $row['4']; ?></p>
-                                    <p class="card-text"></p>
                                 <p class="card-text"></p>
-                                <a href="#" class="btn btn-primary"><?php echo $row['9']; ?></a>
+                                <p class="card-text"></p>
+                                <?php if( $row['9']==1){
+                                    echo '<p><a href="t_status.php?id='.$row['0'].'&status=0" class="btn  btn-primary" style="align-items: center;">Active</a> </p> ';
+                                }  
+                                else{
+                                    echo '<p><a href="t_status.php?id='.$row['0'].'&status=1" class="btn  btn-danger" style="align-items: center;">Inactive</a> </p> ';
 
-                                
+                                }?>
+
+
                             </div>
                         </div>
                     </div>
 
 
                     <?php
-                    
+
                 }
                 ?>
 
