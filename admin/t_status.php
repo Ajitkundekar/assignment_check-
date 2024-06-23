@@ -4,6 +4,6 @@ include ('config.php');
 $id = $_GET['id'];
 $status = $_GET['status'];
 mysqli_query($con, "update teacher set status= $status where id = $id");
-header('location:teacher.php');
+header('location:teacher_list.php');
 
 ?>

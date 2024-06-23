@@ -32,17 +32,19 @@ if (!isset($_SESSION['auser'])) {
         .card2 {
             width: 20rem;
             padding: 7px;
-            margin: 10px;
+            margin-bottom: 5px;
             background-color: #fff;
             border-radius: 10px;
             transition: all 0.8s;
         }
+        .cimg{border-radius: 20rem;     box-shadow: 2px 5px 10px black ;}
+      
 
         .card2:hover {
 
             box-shadow: 2px 2px 5px 5px;
-            background-color: lightcyan
-            ;
+            background-color: lightcyan ;
+            
             
 
 
@@ -85,9 +87,9 @@ if (!isset($_SESSION['auser'])) {
                 $cnt = 1;
                 while ($row = mysqli_fetch_row($query)) {
                     ?>
-                    <div class="col-xl-3 col-sm-6 " style="margin-left: 10px;">
+                    <div class="col-xl-4 col-sm-6 col-lg-6  " style="">
                         <div class="card card2 " style=" ">
-                            <img style="border-radius: 20rem;     box-shadow: 2px 5px 10px black ;"
+                            <img class="cimg"
                                 src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg"
                                 class="card-img-top" alt="...">
                             <div class="card-body">
