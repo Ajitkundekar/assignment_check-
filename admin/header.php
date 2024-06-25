@@ -34,13 +34,13 @@
        <!-- Dropdown for Teacher -->
        <div class="dropdown list-group-item list-group-item-action list-group-item-light p-3" id="teacherDropdown">
                 
-                <a class="  dropdown-toggle   btn dropdown1" href="#!" role="button" data-bs-toggle="dropdown" aria-expanded="false" style=" 
+                <a class="  dropdown-toggle   btn dropdown1" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false" style=" 
   "> <i
                 class="fa-solid fa-chalkboard-user"></i> &nbsp;Student</a>
 
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="teacherDropdown">
-                <li><a class="dropdown-item list-group-item list-group-item-action list-group-item-light p-3" href="teacher_list.php"> Student List</a></li>
-                <li><a class="dropdown-item list-group-item list-group-item-action list-group-item-light p-3"href="teacher_add.php">Add Batch</a></li>
+                <li><a class="dropdown-item list-group-item list-group-item-action list-group-item-light p-3" href="student.php"> Student List</a></li>
+                <li><a class="dropdown-item list-group-item list-group-item-action list-group-item-light p-3"href="add_batch.php">Add Batch</a></li>
               
                 </ul>
             </div>
